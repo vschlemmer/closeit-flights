@@ -2,33 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d30a915-94dd-4bc1-9c59-340c9bdaaf0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/byte-buddy-1.7.9.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-compress-1.15.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.10.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/mockito-core-2.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/mockito-core-2.9.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/mockito-core-2.9.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/objenesis-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/FileDownloader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/FileHelper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/IFileDownloader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/exception/BadSuffixException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/test/FileHelperTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileDownloader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/IFileDownloader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/exception/BadSuffixException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/FileHelperTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/flights/1987.csv.bz2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/flights/1989.csv.bz2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/ProcessFileHelper.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/FlightsAverageDelay.class" afterPath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/FlightsAverageDelay.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/byte-buddy-1.7.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/commons-compress-1.15.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/junit-4.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mockito-core-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mockito-core-2.9.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mockito-core-2.9.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/objenesis-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/FileDownloader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/FileHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/FlightsAverageDelay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/IFileDownloader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/ProcessFileHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/exception/BadSuffixException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/flights/cz/closeit/admission/fligts/test/FileHelperTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileDownloader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/FlightsAverageDelay.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/IFileDownloader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/exception/BadSuffixException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/FileHelperTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flights.iml" afterPath="$PROJECT_DIR$/flights.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/FlightsAverageDelay.java" afterPath="$PROJECT_DIR$/src/cz/closeit/admission/fligts/FlightsAverageDelay.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,23 +38,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileHelperTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/FileHelperTest.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileDownloader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileDownloader.java">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileHelperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/cz/closeit/admission/fligts/test/FileHelperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="32" column="73" lean-forward="false" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,33 +74,11 @@
         </entry>
       </file>
       <file leaf-file-name="IFileDownloader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/IFileDownloader.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cz/closeit/admission/fligts/IFileDownloader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlightsAverageDelay.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FlightsAverageDelay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -134,6 +123,9 @@
         <option value="$PROJECT_DIR$/src/cz/closeit/admission/fligts/FlightsAverageDelay.java" />
         <option value="$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileHelper.java" />
         <option value="$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/FileHelperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/cz/closeit/admission/fligts/test/FileHelperTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -148,10 +140,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1974" />
-    <option name="y" value="-11" />
-    <option name="width" value="1867" />
-    <option name="height" value="1092" />
+    <option name="x" value="1975" />
+    <option name="y" value="-4" />
+    <option name="width" value="1865" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -169,7 +161,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flights" type="58d84e3e:PackageViewProjectNode" />
+              <item name="flights" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -192,6 +194,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -199,17 +202,6 @@
             <path>
               <item name="flights" type="b2602c69:ProjectViewProjectNode" />
               <item name="flights" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="flights" type="58d84e3e:PackageViewProjectNode" />
-              <item name="flights" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -224,15 +216,19 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/objenesis-1.2.jar!/" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/cz/closeit/admission/fligts" />
     </key>
@@ -423,7 +419,8 @@
       <workItem from="1514937745522" duration="281000" />
       <workItem from="1514938053413" duration="1088000" />
       <workItem from="1514986581618" duration="7627000" />
-      <workItem from="1515060926547" duration="619000" />
+      <workItem from="1515060926547" duration="1647000" />
+      <workItem from="1515062957439" duration="2902000" />
     </task>
     <servers />
   </component>
@@ -460,15 +457,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20934000" />
+    <option name="totallyTimeSpent" value="24864000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1974" y="-11" width="1867" height="1092" extended-state="6" />
+    <frame x="1975" y="-4" width="1865" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -479,7 +475,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25728422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12424409" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -491,6 +487,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -510,11 +507,57 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/FileHelperTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/IFileDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FlightsAverageDelay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/FileHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -522,9 +565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -548,9 +589,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -558,9 +597,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -628,10 +665,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/1988.csv.bz2">
+    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/1988.csv.bz2" />
+    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/FileHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="66" lean-forward="false" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -644,41 +698,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileDownloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FileHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/FlightsAverageDelay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/closeit/admission/fligts/test/FileHelperTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cz/closeit/admission/fligts/IFileDownloader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+        <state relative-caret-position="180">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/maven-archiver/pom.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/cz/closeit/admission/fligts/test/FileHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="73" lean-forward="false" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -758,7 +827,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>objenesis-1.2</last-edited>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

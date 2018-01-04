@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import java.net.URL;
 
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
@@ -20,11 +21,11 @@ public class FileHelperTest {
     @Test
     public void testLoadFileDownload() {
         // check that the file is downloaded when not found locally
-        when(fileDownloader.download(any(), anyString())).thenReturn("1987.csv.bz2");
+        when(fileDownloader.download((URL) any(), anyString())).thenReturn("1987.csv.bz2");
         FileHelper fileHelper = new FileHelper(fileDownloader);
         String fileName = fileHelper.loadFile("1987", filePrefix);
         assertEquals("1987.csv.bz2", fileName);
-        verify(fileDownloader, times(1)).download(any(), anyString());
+        verify(fileDownloader, times(1)).download((URL) any(), anyString());
     }
 
     @Test
@@ -33,7 +34,7 @@ public class FileHelperTest {
         FileHelper fileHelper = new FileHelper(fileDownloader);
         String fileName = fileHelper.loadFile("1988", filePrefix);
         assertEquals("1988.csv.bz2", fileName);
-        verify(fileDownloader, never()).download(any(), anyString());
+        verify(fileDownloader, never()).download((URL) any(), anyString());
     }
 
 }
