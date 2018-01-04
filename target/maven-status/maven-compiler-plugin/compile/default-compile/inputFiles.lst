@@ -1,5 +1,8 @@
+/home/vojtech/workspace/java/test/closeit/flights/src/main/java/cz/closeit/admission/fligts/IFileDecompressor.java
 /home/vojtech/workspace/java/test/closeit/flights/src/main/java/cz/closeit/admission/fligts/IFileDownloader.java
 /home/vojtech/workspace/java/test/closeit/flights/src/main/java/cz/closeit/admission/fligts/FileHelper.java
 /home/vojtech/workspace/java/test/closeit/flights/src/main/java/cz/closeit/admission/fligts/FlightsAverageDelay.java
+/home/vojtech/workspace/java/test/closeit/flights/src/main/java/cz/closeit/admission/fligts/FileDecompressor.java
 /home/vojtech/workspace/java/test/closeit/flights/src/main/java/cz/closeit/admission/fligts/FileDownloader.java
 /home/vojtech/workspace/java/test/closeit/flights/src/main/java/cz/closeit/admission/fligts/exception/BadSuffixException.java
+/home/vojtech/workspace/java/test/closeit/flights/src/main/java/cz/closeit/admission/fligts/Util.java

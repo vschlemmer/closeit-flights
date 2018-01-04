@@ -6,11 +6,15 @@ import java.net.URL;
 
 public class FileHelper {
     private final String URL_PREFIX = "http://stat-computing.org/dataexpo/2009/";
-    private final String FILE_POSTFIX = ".csv.bz2";
-    private IFileDownloader fileDownloader;
+    private final String FILE_SUFFIX = "csv";
+    private final String ARCHIVE_SUFFIX = "bz2";
 
-    public FileHelper(IFileDownloader fileDownloader) {
+    private IFileDownloader fileDownloader;
+    private IFileDecompressor fileDecompressor;
+
+    public FileHelper(IFileDownloader fileDownloader, IFileDecompressor fileDecompressor) {
         this.fileDownloader = fileDownloader;
+        this.fileDecompressor = fileDecompressor;
     }
 
     /**
@@ -21,15 +25,21 @@ public class FileHelper {
      * @return String the path to the loaded file
      */
     public String loadFile(String year, String prefix) {
-        String filePath = prefix + year + FILE_POSTFIX;
+        if (!isNumeric(year)) {
+            System.out.println("Given year must be a number.");
+            return null;
+        }
+
+        String filePath = prefix + year + getCompleteSuffix();
         File file = new File(filePath);
         if (file.exists() && !file.isDirectory()) {
+            System.out.println("Using previously downloaded file.");
             return filePath;
         }
 
         URL url = null;
         try {
-            url = new URL(URL_PREFIX + year + FILE_POSTFIX);
+            url = new URL(URL_PREFIX + year + getCompleteSuffix());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -39,6 +49,66 @@ public class FileHelper {
         }
 
         return null;
+    }
+
+    /**
+     * Decompresses the given archive
+     * In case the corresponding decompressed file already exists, it is returned
+     * @param filePath String
+     * @return String the path to the decompressed file
+     */
+    public String decompressFile(String filePath) {
+        if (isSuffixInvalid(filePath, ARCHIVE_SUFFIX)) {
+            return "";
+        }
+
+        String filePathWithoutSuffix = getFilePathWithoutSuffix(filePath);
+        if (isSuffixInvalid(filePathWithoutSuffix, FILE_SUFFIX)) {
+            return "";
+        }
+
+        File file = new File(filePathWithoutSuffix);
+        if (file.exists() && !file.isDirectory()) {
+            return filePathWithoutSuffix;
+        }
+
+        if (fileDecompressor.decompress(filePath)) {
+            return filePathWithoutSuffix;
+        }
+
+        return "";
+    }
+
+    private boolean isNumeric(String year) {
+        try {
+            int num = Integer.parseInt(year);
+        } catch(NumberFormatException nfe) {
+            return false;
+        }
+
+        return true;
+    }
+
+    private boolean isSuffixInvalid(String filePath, String expectedSuffix) {
+        String suffix = filePath.substring(filePath.lastIndexOf('.') + 1, filePath.length());
+        if (!expectedSuffix.equals(suffix)) {
+            System.out.println(expectedSuffix + " suffix expected, encountered '" + suffix + "'.");
+            return true;
+        }
+
+        return false;
+    }
+
+    private String getFilePathWithoutSuffix(String filePath) {
+        if (filePath.contains(".")) {
+            return filePath.substring(0, filePath.lastIndexOf('.'));
+        }
+
+        return "";
+    }
+
+    private String getCompleteSuffix() {
+        return "." + FILE_SUFFIX + "." + ARCHIVE_SUFFIX;
     }
 
 }

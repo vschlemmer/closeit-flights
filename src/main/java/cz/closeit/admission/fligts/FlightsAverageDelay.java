@@ -7,8 +7,16 @@ public class FlightsAverageDelay {
      * @param args String[]
      */
     public static void main(String[] args) {
-        FileHelper helper = new FileHelper(new FileDownloader());
-        System.out.println(helper.loadFile("1987", "src/main/resources/"));
+        FileHelper helper = new FileHelper(new FileDownloader(), new FileDecompressor());
+        String loadedFile = helper.loadFile("1987", "src/main/resources/");
+        System.out.println(loadedFile);
+
+        if (loadedFile == null || "".equals(loadedFile)) {
+            return;
+        }
+
+        String decompressedFile = helper.decompressFile(loadedFile);
+        System.out.println(decompressedFile);
     }
 
 }

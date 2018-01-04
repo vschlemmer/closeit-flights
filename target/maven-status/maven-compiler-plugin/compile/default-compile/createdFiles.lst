@@ -1,5 +1,8 @@
 cz/closeit/admission/fligts/FileHelper.class
-cz/closeit/admission/fligts/exception/BadSuffixException.class
-cz/closeit/admission/fligts/FileDownloader.class
+cz/closeit/admission/fligts/FileDecompressor.class
+cz/closeit/admission/fligts/Util.class
 cz/closeit/admission/fligts/FlightsAverageDelay.class
 cz/closeit/admission/fligts/IFileDownloader.class
+cz/closeit/admission/fligts/exception/BadSuffixException.class
+cz/closeit/admission/fligts/FileDownloader.class
+cz/closeit/admission/fligts/IFileDecompressor.class

@@ -1,5 +1,6 @@
 package cz.closeit.admission.fligts;
 
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -19,7 +20,7 @@ public class FileDownloader implements IFileDownloader {
      */
     @Override
     public String download(URL url, String filePath) {
-        try(
+        try (
             ReadableByteChannel channel = Channels.newChannel(url.openStream());
             FileOutputStream stream = new FileOutputStream(filePath)
         ) {
@@ -36,12 +37,15 @@ public class FileDownloader implements IFileDownloader {
                     break;
                 }
                 offset += bytesTransferred;
-                System.out.print("Progress: " + (long)((float)offset / fileSize * 100) + "%\r");
+                System.out.print("Progress: " + Util.getProgress(offset, fileSize) + "%\r");
             }
             System.out.println();
 
             return filePath;
-        } catch (IOException e) {
+        } catch (FileNotFoundException fnfe) {
+            System.out.println("Data for given year could not be found.");
+            // todo: log the stack trace
+        } catch (IOException ioe) {
             System.out.println("Something went wrong while downloading the statistics file.");
             // todo: log the stack trace
         }

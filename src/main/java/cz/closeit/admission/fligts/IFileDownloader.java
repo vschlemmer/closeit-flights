@@ -10,6 +10,6 @@ public interface IFileDownloader {
      * @param filePath String
      * @return String the name of the downloaded file
      */
-    public String download(URL url, String filePath);
+    String download(URL url, String filePath);
 
 }

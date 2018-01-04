@@ -1,2 +1,5 @@
 .idea/*
 flights.iml
+target/surefire-reports
+target/maven-archiver
+src/main/resources

@@ -1,6 +1,7 @@
 package cz.closeit.admission.fligts.test;
 
 import cz.closeit.admission.fligts.FileHelper;
+import cz.closeit.admission.fligts.IFileDecompressor;
 import cz.closeit.admission.fligts.IFileDownloader;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,12 +19,15 @@ public class FileHelperTest {
     @Mock
     private IFileDownloader fileDownloader;
 
+    @Mock
+    private IFileDecompressor fileDecompressor;
+
     @Test
     public void testLoadFileDownload() {
         // check that the file is downloaded when not found locally
         String originalFilePath = filePrefix + "1987.csv.bz2";
         when(fileDownloader.download((URL) any(), anyString())).thenReturn(originalFilePath);
-        FileHelper fileHelper = new FileHelper(fileDownloader);
+        FileHelper fileHelper = new FileHelper(fileDownloader, fileDecompressor);
         String filePath = fileHelper.loadFile("1987", filePrefix);
         assertEquals(originalFilePath, filePath);
         verify(fileDownloader, times(1)).download((URL) any(), anyString());
@@ -32,10 +36,28 @@ public class FileHelperTest {
     @Test
     public void testLoadFileLocal() {
         // check that the file is retrieved from a local folder if found
-        FileHelper fileHelper = new FileHelper(fileDownloader);
+        FileHelper fileHelper = new FileHelper(fileDownloader, fileDecompressor);
         String filePath = fileHelper.loadFile("1988", filePrefix);
         assertEquals(filePrefix + "1988.csv.bz2", filePath);
         verify(fileDownloader, never()).download((URL) any(), anyString());
+    }
+
+    @Test
+    public void testLoadFileNonNumericYear() {
+        // check that the file is retrieved from a local folder if found
+        FileHelper fileHelper = new FileHelper(fileDownloader, fileDecompressor);
+        String filePath = fileHelper.loadFile("asdf", filePrefix);
+        assertEquals(null, filePath);
+        verify(fileDownloader, never()).download((URL) any(), anyString());
+    }
+
+    @Test
+    public void testLoadFileNonExistingYear() {
+        // check that the file is retrieved from a local folder if found
+        FileHelper fileHelper = new FileHelper(fileDownloader, fileDecompressor);
+        String filePath = fileHelper.loadFile("1900", filePrefix);
+        assertEquals(null, filePath);
+        verify(fileDownloader, times(1)).download((URL) any(), anyString());
     }
 
 }
