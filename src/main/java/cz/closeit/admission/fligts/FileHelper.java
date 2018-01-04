@@ -6,7 +6,7 @@ import java.net.URL;
 
 public class FileHelper {
     private final String URL_PREFIX = "http://stat-computing.org/dataexpo/2009/";
-    private final String URL_POSTFIX = ".csv.bz2";
+    private final String FILE_POSTFIX = ".csv.bz2";
     private IFileDownloader fileDownloader;
 
     public FileHelper(IFileDownloader fileDownloader) {
@@ -18,38 +18,27 @@ public class FileHelper {
      * In case the file is not found locally, it is downloaded
      * @param year String
      * @param prefix String
-     * @return String the name of the loaded file
+     * @return String the path to the loaded file
      */
     public String loadFile(String year, String prefix) {
-        String filename = getFileName(year);
-        URL resourceUrl = getClass().getResource(prefix + filename);
-        if (resourceUrl != null) {
-            File file = new File(resourceUrl.getPath());
-            if (file.exists() && !file.isDirectory()) {
-                return filename;
-            }
+        String filePath = prefix + year + FILE_POSTFIX;
+        File file = new File(filePath);
+        if (file.exists() && !file.isDirectory()) {
+            return filePath;
         }
 
         URL url = null;
         try {
-            url = new URL(getCompleteUrl(year));
+            url = new URL(URL_PREFIX + year + FILE_POSTFIX);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         if (url != null) {
-            return fileDownloader.download(url, filename);
+            return fileDownloader.download(url, filePath);
         }
 
         return null;
-    }
-
-    private String getCompleteUrl(String year) {
-        return URL_PREFIX + getFileName(year);
-    }
-
-    private String getFileName(String year) {
-        return year + URL_POSTFIX;
     }
 
 }

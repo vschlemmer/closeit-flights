@@ -14,14 +14,14 @@ public class FileDownloader implements IFileDownloader {
     /**
      * Downloads csv file with statistics of the given year
      * @param url URL
-     * @param fileName String
+     * @param filePath String
      * @return String the name of the downloaded file
      */
     @Override
-    public String download(URL url, String fileName) {
+    public String download(URL url, String filePath) {
         try(
             ReadableByteChannel channel = Channels.newChannel(url.openStream());
-            FileOutputStream stream = new FileOutputStream(fileName)
+            FileOutputStream stream = new FileOutputStream(filePath)
         ) {
             long fileSize = getFileSize(url);
             System.out.println("Downloading the file with the statistics, please wait...");
@@ -40,7 +40,7 @@ public class FileDownloader implements IFileDownloader {
             }
             System.out.println();
 
-            return fileName;
+            return filePath;
         } catch (IOException e) {
             System.out.println("Something went wrong while downloading the statistics file.");
             // todo: log the stack trace

@@ -8,7 +8,7 @@ public class FlightsAverageDelay {
      */
     public static void main(String[] args) {
         FileHelper helper = new FileHelper(new FileDownloader());
-        System.out.println(helper.loadFile("1988", "."));
+        System.out.println(helper.loadFile("1987", "src/main/resources/"));
     }
 
 }
