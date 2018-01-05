@@ -1,6 +1,6 @@
 Application description:
 -------------------------
-- the application connects to a <a href="http://stat-computing.org/dataexpo/2009/the-data.html">flight statistics page</a>, retrieves statistics from the year 1989 and computes an average delay of flights arriving to Los Angeles that have not been cancelled
+- the application connects to a <a href="http://stat-computing.org/dataexpo/2009/the-data.html">flight statistics page</a>, retrieves statistics from the given year and computes an average delay of flights arriving to the given airport that have not been cancelled
 
 System prerequisites:
 -------------------------
@@ -11,6 +11,12 @@ System prerequisites:
 To run the application:
 -------------------------
 1) `git clone https://github.com/vschlemmer/closeit-flights.git`
-2) `mvn clean install`
-3) `mvn exec:java`
-4) You will see the statistics file downloading progress and then you will see the result of the computation
+2) `cd closeit-flights`
+3) `mvn clean install`
+4) `mvn exec:java -Dexec.args="1989 LAX"`
+5) You will see the statistics file downloading progress and then the result of the computation for a given year and airport code
+
+To run the tests:
+-------------------------
+1) `mvn test`
+2) see the output of the test run

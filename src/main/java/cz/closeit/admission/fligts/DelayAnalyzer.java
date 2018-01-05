@@ -12,6 +12,7 @@ public class DelayAnalyzer implements IDelayAnalyzer {
     @Override
     public double getAverageDelay(String filePath, String airportCode) {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            System.out.println("Calculating the average delay, please wait...");
             String line;
             int flightsCount = 0;
             int delayAgg = 0;
@@ -35,11 +36,17 @@ public class DelayAnalyzer implements IDelayAnalyzer {
                 linesCount++;
             }
 
-            System.out.println("Flights processed: " + linesCount);
+            System.out.println("Number of flights processed: " + linesCount);
+            if (flightsCount == 0) {
+                System.out.println("No uncancelled flights found for given airport and year.");
+                return 0;
+            }
+
             double averageDelay = (double)delayAgg / flightsCount;
             return (double)Math.round(averageDelay * 100.0) / 100.0;
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Something went wrong while analyzing the statistics file.");
+            // todo: log the stack trace
         }
 
         return 0;

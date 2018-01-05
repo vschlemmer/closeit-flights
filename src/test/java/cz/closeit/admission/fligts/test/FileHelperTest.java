@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class FileHelperTest {
-    private String filePrefix = "src/test/resources/";
+    private final String FILE_PREFIX = "src/test/resources/";
 
     @Mock
     private IFileDownloader fileDownloader;
@@ -25,10 +25,10 @@ public class FileHelperTest {
     @Test
     public void testLoadFileDownload() {
         // check that the file is downloaded when not found locally
-        String originalFilePath = filePrefix + "1987.csv.bz2";
+        String originalFilePath = FILE_PREFIX + "1987.csv.bz2";
         when(fileDownloader.download((URL) any(), anyString())).thenReturn(originalFilePath);
         FileHelper fileHelper = new FileHelper(fileDownloader, fileDecompressor);
-        String filePath = fileHelper.loadFile("1987", filePrefix);
+        String filePath = fileHelper.loadFile("1987", FILE_PREFIX);
         assertEquals(originalFilePath, filePath);
         verify(fileDownloader, times(1)).download((URL) any(), anyString());
     }
@@ -37,8 +37,8 @@ public class FileHelperTest {
     public void testLoadFileLocal() {
         // check that the file is retrieved from a local folder if found
         FileHelper fileHelper = new FileHelper(fileDownloader, fileDecompressor);
-        String filePath = fileHelper.loadFile("1988", filePrefix);
-        assertEquals(filePrefix + "1988.csv.bz2", filePath);
+        String filePath = fileHelper.loadFile("1988", FILE_PREFIX);
+        assertEquals(FILE_PREFIX + "1988.csv.bz2", filePath);
         verify(fileDownloader, never()).download((URL) any(), anyString());
     }
 
@@ -46,7 +46,7 @@ public class FileHelperTest {
     public void testLoadFileNonNumericYear() {
         // check that the file is retrieved from a local folder if found
         FileHelper fileHelper = new FileHelper(fileDownloader, fileDecompressor);
-        String filePath = fileHelper.loadFile("asdf", filePrefix);
+        String filePath = fileHelper.loadFile("asdf", FILE_PREFIX);
         assertEquals(null, filePath);
         verify(fileDownloader, never()).download((URL) any(), anyString());
     }
@@ -55,7 +55,7 @@ public class FileHelperTest {
     public void testLoadFileNonExistingYear() {
         // check that the file is retrieved from a local folder if found
         FileHelper fileHelper = new FileHelper(fileDownloader, fileDecompressor);
-        String filePath = fileHelper.loadFile("1900", filePrefix);
+        String filePath = fileHelper.loadFile("1900", FILE_PREFIX);
         assertEquals(null, filePath);
         verify(fileDownloader, times(1)).download((URL) any(), anyString());
     }

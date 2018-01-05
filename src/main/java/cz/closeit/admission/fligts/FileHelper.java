@@ -41,7 +41,8 @@ public class FileHelper {
         try {
             url = new URL(URL_PREFIX + year + getCompleteSuffix());
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Something went wrong while downloading the statistics file.");
+            // todo: log the stack trace
         }
 
         if (url != null) {
