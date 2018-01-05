@@ -62,13 +62,14 @@ public class FileHelper {
             return "";
         }
 
-        String filePathWithoutSuffix = getFilePathWithoutSuffix(filePath);
+        String filePathWithoutSuffix = Util.getFilePathWithoutSuffix(filePath);
         if (isSuffixInvalid(filePathWithoutSuffix, FILE_SUFFIX)) {
             return "";
         }
 
         File file = new File(filePathWithoutSuffix);
         if (file.exists() && !file.isDirectory()) {
+            System.out.println("Using previously decompressed file.");
             return filePathWithoutSuffix;
         }
 
@@ -97,14 +98,6 @@ public class FileHelper {
         }
 
         return false;
-    }
-
-    private String getFilePathWithoutSuffix(String filePath) {
-        if (filePath.contains(".")) {
-            return filePath.substring(0, filePath.lastIndexOf('.'));
-        }
-
-        return "";
     }
 
     private String getCompleteSuffix() {

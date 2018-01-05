@@ -12,4 +12,17 @@ public class Util {
         return (long)((float)offset / fileSize * 100);
     }
 
+    /**
+     * Removes the suffix from file path
+     * @param filePath String
+     * @return String
+     */
+    public static String getFilePathWithoutSuffix(String filePath) {
+        if (filePath.contains(".")) {
+            return filePath.substring(0, filePath.lastIndexOf('.'));
+        }
+
+        return "";
+    }
+
 }

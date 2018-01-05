@@ -5,7 +5,7 @@ public interface IFileDecompressor {
     /**
      * Decompresses bz2 file
      * @param filePath String
-     * @return String the name of the file
+     * @return boolean true if the decompression was without errors
      */
     boolean decompress(String filePath);
 

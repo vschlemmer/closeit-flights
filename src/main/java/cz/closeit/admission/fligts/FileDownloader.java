@@ -31,11 +31,7 @@ public class FileDownloader implements IFileDownloader {
             // using a buffer size in a cycle in order to show a progress
             long bytesTransferred;
             long offset = 0;
-            while (true) {
-                bytesTransferred = stream.getChannel().transferFrom(channel, offset, BUFFER_SIZE);
-                if (bytesTransferred == 0) {
-                    break;
-                }
+            while ((bytesTransferred = stream.getChannel().transferFrom(channel, offset, BUFFER_SIZE)) > 0) {
                 offset += bytesTransferred;
                 System.out.print("Progress: " + Util.getProgress(offset, fileSize) + "%\r");
             }
