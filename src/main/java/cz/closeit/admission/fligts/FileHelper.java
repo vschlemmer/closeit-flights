@@ -31,6 +31,11 @@ public class FileHelper {
         }
 
         String filePath = prefix + year + getCompleteSuffix();
+
+        if (!(new File(prefix).mkdirs())) {
+            System.out.println("Could not create a folder for storing the statistics data.");
+        }
+
         File file = new File(filePath);
         if (file.exists() && !file.isDirectory()) {
             System.out.println("Using previously downloaded file.");
